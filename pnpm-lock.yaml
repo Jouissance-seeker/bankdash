@@ -27,6 +27,9 @@ importers:
       '@eslint/js':
         specifier: ^9.21.0
         version: 9.23.0
+      '@fullstacksjs/tsconfig':
+        specifier: ^1.1.0
+        version: 1.1.0(typescript@5.7.3)
       '@types/react':
         specifier: ^19.0.10
         version: 19.0.12
@@ -55,7 +58,7 @@ importers:
         specifier: ^3.5.3
         version: 3.5.3
       typescript:
-        specifier: ~5.7.2
+        specifier: ~5.7.3
         version: 5.7.3
       typescript-eslint:
         specifier: ^8.24.1
@@ -330,6 +333,11 @@ packages:
   '@eslint/plugin-kit@0.2.7':
     resolution: {integrity: sha512-JubJ5B2pJ4k4yGxaNLdbjrnk9d/iDz6/q8wOilpIowd6PJPgaxCuHBnBszq7Ce2TyMrywm5r4PnKm6V3iiZF+g==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
+
+  '@fullstacksjs/tsconfig@1.1.0':
+    resolution: {integrity: sha512-HLkGwxnt+qba+Of0lvVO7DOckgfdmV+3xFNv/2jLhZ91DNV88g1Ro0YZOjH57Ix0Zvli66/0SJRfiEdpZcyjcw==}
+    peerDependencies:
+      typescript: '>=4'
 
   '@humanfs/core@0.19.1':
     resolution: {integrity: sha512-5DyQ4+1JEUzejeK1JGICcideyfUbGixgS9jNgex5nqkW+cY7WZhxBigmieN5Qnw9ZosSNVC9KQKyb+GUaGyKUA==}
@@ -1725,6 +1733,10 @@ snapshots:
     dependencies:
       '@eslint/core': 0.12.0
       levn: 0.4.1
+
+  '@fullstacksjs/tsconfig@1.1.0(typescript@5.7.3)':
+    dependencies:
+      typescript: 5.7.3
 
   '@humanfs/core@0.19.1': {}
 
