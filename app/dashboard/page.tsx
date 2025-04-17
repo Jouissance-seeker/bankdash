@@ -1,4 +1,5 @@
 import { RecentTransaction } from '@/containers/routes/dashboard/recent-transaction';
+import { WeeklyActivity } from '@/containers/routes/dashboard/weekly-activity';
 import { MyCards } from '@/containers/routes/global/my-cards';
 
 export default function Page() {
@@ -9,9 +10,7 @@ export default function Page() {
         <RecentTransaction />
       </div>
       <div className="grid grid-cols-5 gap-4">
-        <p className="col-span-full rounded-2xl border border-gray-200 bg-white p-3 lg:col-span-3">
-          weekly activity
-        </p>
+        <WeeklyActivity />
         <p className="col-span-full rounded-2xl border border-gray-200 bg-white p-3 lg:col-span-2">
           expense statistics
         </p>

@@ -16,6 +16,7 @@
     "next": "15.2.5",
     "nuqs": "^2.4.3",
     "react": "^19.0.0",
+    "react-apexcharts": "^1.7.0",
     "react-dom": "^19.0.0",
     "swiper": "^11.2.6",
     "tailwind-merge": "^3.2.0"
