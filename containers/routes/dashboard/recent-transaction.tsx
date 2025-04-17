@@ -30,8 +30,8 @@ export function RecentTransaction() {
 
   return (
     <div className="col-span-full flex flex-col gap-3 overflow-hidden lg:col-span-2">
-      <p className="text-lg font-semibold">Recent Transaction</p>
-      <div className="border border-gray-200 bg-white p-4 rounded-[20px]">
+      <p className="text-lg font-semibold lg:text-xl">Recent Transaction</p>
+      <div className="rounded-[20px] border border-gray-200 bg-white px-4 py-2">
         {data.map((item, index) => (
           <div key={index} className="flex items-center justify-between py-2">
             <div className="flex items-center gap-3">
@@ -39,7 +39,7 @@ export function RecentTransaction() {
                 style={{
                   backgroundColor: `${item.color}2A`,
                 }}
-                className='p-2 rounded-full'
+                className="rounded-full p-2"
               >
                 <item.icon size="25" color={item.color} />
               </div>

@@ -6,7 +6,7 @@ import { usePathname } from 'next/navigation';
 
 export function Header() {
   return (
-    <div className="border-b border-b-gray-200 bg-white py-4">
+    <div className="sticky top-0 z-10 border-b border-b-gray-200 bg-white py-4">
       <Desktop />
       <Mobile />
     </div>
@@ -15,7 +15,7 @@ export function Header() {
 
 const Desktop = () => {
   return (
-    <div className="hidden container w-full items-center justify-between lg:flex">
+    <div className="container hidden w-full items-center justify-between lg:flex">
       <div className="flex items-center gap-2 rounded-full border border-gray-200 bg-gray-100 p-2 transition-all focus-within:border-gray-300">
         <SearchNormal1 size={23} className="text-gray-500" />
         <input
@@ -50,12 +50,12 @@ const Mobile = () => {
       .toUpperCase() + usePathname().slice(2);
 
   return (
-    <div className="flex w-full container flex-col gap-3 lg:hidden">
+    <div className="container flex w-full flex-col gap-3 lg:hidden">
       <div className="flex w-full items-center justify-between">
         <button onClick={() => toggleUrlStateHumbergerMenu.show()}>
           <HamburgerMenu size={25} color="#555" />
         </button>
-        <p className="text-lg font-semibold">{title}</p>
+        <p className="text-lg font-semibold lg:text-xl">{title}</p>
         <Image
           className="rounded-full"
           src={'/images/avatar.jpg'}

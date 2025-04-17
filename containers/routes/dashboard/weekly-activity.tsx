@@ -1,6 +1,23 @@
 'use client';
 
-import ReactApexChart from 'react-apexcharts';
+import dynamic from 'next/dynamic';
+import { ThreeDots } from 'react-loader-spinner';
+
+const ReactApexChart = dynamic(() => import('react-apexcharts'), {
+  ssr: false,
+  loading: () => (
+    <div className='flex items-center justify-center py-4'>
+      <ThreeDots
+        visible={true}
+        height="80"
+        width="80"
+        color="#155DFC"
+        radius="9"
+        ariaLabel="three-dots-loading"
+      />
+    </div>
+  ),
+});
 
 export function WeeklyActivity() {
   const series = [
@@ -17,7 +34,6 @@ export function WeeklyActivity() {
       data: [35, 41, 36, 26, 45, 48, 52, 53, 41],
     },
   ];
-
   const options: ApexCharts.ApexOptions = {
     chart: {
       type: 'bar',
@@ -71,7 +87,7 @@ export function WeeklyActivity() {
 
   return (
     <div className="col-span-full flex flex-col gap-3 overflow-hidden lg:col-span-3">
-      <p className="text-lg font-semibold">Weekly Activity</p>
+      <p className="text-lg font-semibold lg:text-xl">Weekly Activity</p>
       <div className="rounded-[20px] border border-gray-200 bg-white p-4 pb-0">
         <ReactApexChart
           options={options}

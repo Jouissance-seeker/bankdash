@@ -1,3 +1,5 @@
+import { BalanceHistory } from '@/containers/routes/dashboard/balance-history';
+import { ExpenseStatistics } from '@/containers/routes/dashboard/expense-statistics';
 import { RecentTransaction } from '@/containers/routes/dashboard/recent-transaction';
 import { WeeklyActivity } from '@/containers/routes/dashboard/weekly-activity';
 import { MyCards } from '@/containers/routes/global/my-cards';
@@ -11,18 +13,9 @@ export default function Page() {
       </div>
       <div className="grid grid-cols-5 gap-4">
         <WeeklyActivity />
-        <p className="col-span-full rounded-2xl border border-gray-200 bg-white p-3 lg:col-span-2">
-          expense statistics
-        </p>
+        <ExpenseStatistics />
       </div>
-      <div className="grid grid-cols-5 gap-4">
-        <p className="col-span-full rounded-2xl border border-gray-200 bg-white p-3 lg:col-span-2">
-          quick transfer
-        </p>
-        <p className="col-span-full rounded-2xl border border-gray-200 bg-white p-3 lg:col-span-3">
-          banalce history
-        </p>
-      </div>
+    <BalanceHistory />
     </>
   );
 }

@@ -9,7 +9,7 @@ import { Autoplay } from 'swiper/modules';
 export function MyCards() {
   return (
     <div className="col-span-full flex flex-col gap-3 overflow-hidden lg:col-span-3">
-      <p className="text-lg font-semibold">My Cards</p>
+      <p className="text-lg font-semibold lg:text-xl">My Cards</p>
       <Swiper
         spaceBetween={10}
         centeredSlides={false}
@@ -63,7 +63,7 @@ const Card = (props: ICardProps) => {
   return (
     <div
       className={cn(
-        'flex w-full flex-col gap-4 rounded-[20px] border border-gray-200 pt-4',
+        'flex w-full cursor-pointer flex-col gap-4 rounded-[20px] border border-gray-200 pt-4',
         {
           'bg-gradient-to-bl from-[#4C49ED] to-[#0A06F4] text-white':
             props.type === 'blue',
@@ -76,7 +76,7 @@ const Card = (props: ICardProps) => {
           <p
             className={cn('text-xs', {
               'text-gray-200': props.type === 'blue',
-              'text-gray-500': props.type === 'white'
+              'text-gray-500': props.type === 'white',
             })}
           >
             Balance
@@ -99,7 +99,7 @@ const Card = (props: ICardProps) => {
           <p
             className={cn('text-xs', {
               'text-gray-200': props.type === 'blue',
-              'text-gray-500': props.type === 'white'
+              'text-gray-500': props.type === 'white',
             })}
           >
             CARD HOLDER
@@ -110,7 +110,7 @@ const Card = (props: ICardProps) => {
           <p
             className={cn('text-xs', {
               'text-gray-200': props.type === 'blue',
-              'text-gray-500': props.type === 'white'
+              'text-gray-500': props.type === 'white',
             })}
           >
             VALID THRU
@@ -123,7 +123,7 @@ const Card = (props: ICardProps) => {
           <p
             className={cn('text-xs', {
               'text-gray-200': props.type === 'blue',
-              'text-gray-500': props.type === 'white'
+              'text-gray-500': props.type === 'white',
             })}
           >
             CARD NUMBER
