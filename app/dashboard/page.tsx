@@ -1,13 +1,12 @@
-import { MyCards } from "@/containers/routes/global/my-cards";
+import { RecentTransaction } from '@/containers/routes/dashboard/recent-transaction';
+import { MyCards } from '@/containers/routes/global/my-cards';
 
 export default function Page() {
   return (
     <>
       <div className="grid grid-cols-5 gap-4">
         <MyCards />
-        <p className="col-span-full rounded-2xl border border-gray-200 bg-white p-3 lg:col-span-2">
-          recent transaction
-        </p>
+        <RecentTransaction />
       </div>
       <div className="grid grid-cols-5 gap-4">
         <p className="col-span-full rounded-2xl border border-gray-200 bg-white p-3 lg:col-span-3">
