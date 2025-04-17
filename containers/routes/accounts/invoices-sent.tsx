@@ -1,29 +1,25 @@
-import { cn } from '@/utils/cn';
 import { Cards, Money, Paypal } from 'iconsax-reactjs';
 
-export function RecentTransaction() {
+export function InvoicesSent() {
   const data = [
     {
-      text: 'Deposit from my',
-      amount: '-$850',
-      date: '28 Jan 2023',
-      type: 'down',
+      text: 'Apple Store',
+      amount: '$450',
+      time: '5h ago',
       icon: Cards,
       color: '#FFBB38',
     },
     {
-      text: 'Deposit from my',
-      amount: '+$240',
-      date: '13 Jan 2024',
-      type: 'up',
+      text: 'Michael',
+      amount: '$160',
+      time: '2 days ago',
       icon: Paypal,
       color: '#396AFF',
     },
     {
-      text: 'Jemi Wilson',
-      amount: '-$445',
-      date: '28 Jan 2023',
-      type: 'down',
+      text: 'Playstation',
+      amount: '$740',
+      time: '5 days ago',
       icon: Money,
       color: '#16DBCC',
     },
@@ -40,19 +36,17 @@ export function RecentTransaction() {
                 style={{
                   backgroundColor: `${item.color}2A`,
                 }}
-                className="rounded-full p-3"
+                className="rounded-2xl p-3"
               >
                 <item.icon size="25" color={item.color} />
               </div>
               <div className="flex flex-col">
                 <p className="text-smp font-semibold">{item.text}</p>
-                <p className="text-sm text-gray-400">{item.date}</p>
+                <p className="text-sm text-gray-400">{item.time}</p>
               </div>
             </div>
             <p
-              className={cn(
-                item.type === 'down' ? 'text-red-500' : 'text-green-500',
-              )}
+              className={'text-gray-400'}
             >
               {item.amount}
             </p>
