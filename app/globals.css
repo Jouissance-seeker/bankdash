@@ -1,0 +1,14 @@
+@import 'tailwindcss';
+
+@theme inline {
+  --text-xsp: 13px;
+  --text-smp: 15px;
+}
+
+@utility container {
+  @apply px-4 mx-auto max-w-screen-xl;
+}
+
+input {
+  @apply focus:outline-0
+}
