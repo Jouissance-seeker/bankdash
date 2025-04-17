@@ -1,5 +1,6 @@
 import { MyCards } from "@/containers/routes/global/my-cards";
 import { MyExpense } from "@/containers/routes/transactions/my-expense";
+import { RecentTransactions } from "@/containers/routes/transactions/recent-transactions";
 
 export default function Page() {
   return (
@@ -8,6 +9,7 @@ export default function Page() {
         <MyCards />
         <MyExpense />
       </div>
+      <RecentTransactions />
     </>
   );
 }

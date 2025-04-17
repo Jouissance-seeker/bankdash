@@ -16,7 +16,7 @@ export default function TemplateBase(props: IProps) {
       <MobileHumbergerMenu />
       <div className="w-full flex flex-col h-dvh">
         <Header />
-        <main className="flex flex-1 flex-col container gap-4 my-6">
+        <main className="flex flex-1 flex-col container gap-4 py-6">
           {props.children}
         </main>
       </div>
