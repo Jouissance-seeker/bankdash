@@ -14,6 +14,7 @@
     "husky": "^9.1.7",
     "iconsax-reactjs": "^0.0.8",
     "next": "15.2.5",
+    "nextjs-toploader": "^3.8.16",
     "nuqs": "^2.4.3",
     "react": "^19.0.0",
     "react-apexcharts": "^1.7.0",

@@ -1,5 +1,6 @@
 'use client';
 
+import NextTopLoader from 'nextjs-toploader';
 import { NuqsAdapter } from 'nuqs/adapters/next/app';
 import type { ReactNode } from 'react';
 import { Suspense } from 'react';
@@ -10,8 +11,11 @@ interface IProps {
 
 export default function Providers(props: IProps) {
   return (
-    <NuqsAdapter>
-      <Suspense>{props.children}</Suspense>
-    </NuqsAdapter>
+    <>
+      <NextTopLoader color="#155DFC" height={4} />
+      <NuqsAdapter>
+        <Suspense>{props.children}</Suspense>
+      </NuqsAdapter>
+    </>
   );
 }
