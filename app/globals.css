@@ -9,6 +9,10 @@
   @apply px-4 mx-auto max-w-screen-xl;
 }
 
+body {
+  @apply bg-gray-100 text-gray-700;
+}
+
 input {
   @apply focus:outline-0
 }

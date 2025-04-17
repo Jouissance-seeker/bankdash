@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import './globals.css';
 import TemplateBase from '@/containers/templates/base';
-import { cn } from '@/utils/cn';
+import Providers from './providers';
 
 const inter = Inter({
   variable: '--font-inter',
@@ -21,8 +21,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" dir="ltr">
-      <body className={cn('bg-gray-100', inter.variable)}>
-        <TemplateBase>{children}</TemplateBase>
+      <body className={inter.variable}>
+        <Providers>
+          <TemplateBase>{children}</TemplateBase>
+        </Providers>
       </body>
     </html>
   );
