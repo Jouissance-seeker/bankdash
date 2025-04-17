@@ -18,17 +18,15 @@ export function MyCards() {
         className="w-full"
         breakpoints={{
           0: {
-            slidesPerView: 1.5,
+            slidesPerView: 1,
           },
           640: {
-            slidesPerView: 2.5,
-          },
-          720: {
-            slidesPerView: 1.5,
-          },
-          1280: {
             slidesPerView: 2,
           },
+        }}
+        autoplay={{
+          delay: 3000,
+          disableOnInteraction: false,
         }}
       >
         <SwiperSlide>

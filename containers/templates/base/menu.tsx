@@ -3,7 +3,6 @@ import {
   Home2,
   MoneyChange,
   Moneys,
-  Setting2,
   User,
 } from 'iconsax-reactjs';
 import Link from 'next/link';
@@ -30,7 +29,7 @@ export const Menu = () => {
     {
       icon: Moneys,
       name: 'Investments',
-      pathname: 'investments',
+      pathname: '/investments',
     },
   ];
 

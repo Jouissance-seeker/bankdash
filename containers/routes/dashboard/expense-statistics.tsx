@@ -11,7 +11,7 @@ const ReactApexChart = dynamic(() => import('react-apexcharts'), {
         visible={true}
         height="80"
         width="80"
-        color="#155DFC"
+        color="#1A16F3"
         radius="9"
         ariaLabel="three-dots-loading"
       />

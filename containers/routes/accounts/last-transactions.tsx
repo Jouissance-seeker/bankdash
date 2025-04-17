@@ -59,7 +59,7 @@ export function LastTransaction() {
                     <item.icon size="25" color={item.color} />
                   </div>
                   <div className="flex flex-col">
-                    <p className="font-medium whitespace-nowrap text-gray-800">
+                    <p className="font-medium text-smp whitespace-nowrap text-gray-800">
                       {item.text}
                     </p>
                     <p className="text-xs text-gray-400">{item.date}</p>

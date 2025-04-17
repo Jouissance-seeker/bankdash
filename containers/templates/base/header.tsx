@@ -4,10 +4,8 @@ import {
   CloseSquare,
   HamburgerMenu,
   SearchNormal1,
-  Setting2,
 } from 'iconsax-reactjs';
 import Image from 'next/image';
-import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { Menu } from './menu';
 
@@ -103,9 +101,9 @@ export const MobileHumbergerMenu = () => {
         )}
       >
         <div className="flex items-center justify-between">
-          <Image src={'/images/logo.png'} width={130} height={130} alt="logo" />
+          <Image src={'/images/logo.png'} width={170} height={170} alt="logo" />
           <button onClick={() => toggleUrlState.hide()}>
-            <CloseSquare size={28} className={'text-gray-500'} />
+            <CloseSquare size={30} className={'text-gray-500'} />
           </button>
         </div>
         <Menu />
