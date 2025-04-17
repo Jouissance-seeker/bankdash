@@ -1,10 +1,6 @@
 import { cn } from '@/utils/cn';
 import {
-  Card,
-  Diamonds,
   Home2,
-  Judge,
-  LampCharge,
   MoneyChange,
   Moneys,
   Setting2,
@@ -35,11 +31,6 @@ export const Menu = () => {
       icon: Moneys,
       name: 'Investments',
       pathname: 'investments',
-    },
-    {
-      icon: Setting2,
-      name: 'Setting',
-      pathname: '/setting',
     },
   ];
 

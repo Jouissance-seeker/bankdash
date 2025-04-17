@@ -32,17 +32,11 @@ const Desktop = () => {
       </div>
       <Menu />
       <div className="flex items-center gap-3">
-        <Link
-          href={'/setting'}
-          className="rounded-full border border-gray-200 bg-gray-100 p-2 transition-all hover:border-gray-300"
-        >
-          <Setting2 size={20} className="text-gray-500" />
-        </Link>
         <Image
           className="rounded-full"
           src={'/images/avatar.jpg'}
-          width={38}
-          height={38}
+          width={45}
+          height={45}
           alt="avatar"
         />
       </div>
@@ -69,8 +63,8 @@ const Mobile = () => {
           <Image
             className="rounded-full"
             src={'/images/avatar.jpg'}
-            width={35}
-            height={35}
+            width={45}
+            height={45}
             alt="avatar"
           />
         </div>

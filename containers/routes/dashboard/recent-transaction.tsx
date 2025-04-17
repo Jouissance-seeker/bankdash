@@ -7,7 +7,7 @@ export function RecentTransaction() {
       text: 'Deposit from my',
       amount: '-$850',
       date: '28 Jan 2023',
-      type: 'down',
+      direction: 'down',
       icon: Cards,
       color: '#FFBB38',
     },
@@ -15,7 +15,7 @@ export function RecentTransaction() {
       text: 'Deposit from my',
       amount: '+$240',
       date: '13 Jan 2024',
-      type: 'up',
+      direction: 'up',
       icon: Paypal,
       color: '#396AFF',
     },
@@ -23,7 +23,7 @@ export function RecentTransaction() {
       text: 'Jemi Wilson',
       amount: '-$445',
       date: '28 Jan 2023',
-      type: 'down',
+      direction: 'down',
       icon: Money,
       color: '#16DBCC',
     },
@@ -51,7 +51,7 @@ export function RecentTransaction() {
             </div>
             <p
               className={cn(
-                item.type === 'down' ? 'text-red-500' : 'text-green-500',
+                item.direction === 'down' ? 'text-red-500' : 'text-green-500',
               )}
             >
               {item.amount}

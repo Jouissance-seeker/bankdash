@@ -1,4 +1,4 @@
-import { Cards, Money, Paypal } from 'iconsax-reactjs';
+import { Apple, Game, User } from 'iconsax-reactjs';
 
 export function InvoicesSent() {
   const data = [
@@ -6,28 +6,28 @@ export function InvoicesSent() {
       text: 'Apple Store',
       amount: '$450',
       time: '5h ago',
-      icon: Cards,
+      icon: Apple,
       color: '#FFBB38',
     },
     {
       text: 'Michael',
       amount: '$160',
       time: '2 days ago',
-      icon: Paypal,
+      icon: User,
       color: '#396AFF',
     },
     {
       text: 'Playstation',
       amount: '$740',
       time: '5 days ago',
-      icon: Money,
+      icon: Game,
       color: '#16DBCC',
     },
   ];
 
   return (
     <div className="col-span-full flex flex-col gap-3 overflow-hidden lg:col-span-2">
-      <p className="text-lg font-semibold lg:text-xl">Recent Transaction</p>
+      <p className="text-lg font-semibold lg:text-xl">Invoices Sent</p>
       <div className="rounded-[20px] border border-gray-200 bg-white px-4 py-2">
         {data.map((item, index) => (
           <div key={index} className="flex items-center justify-between py-2">
