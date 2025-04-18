@@ -34,13 +34,13 @@ export function RecentTransaction() {
       <p className="text-lg font-semibold lg:text-xl">Recent Transaction</p>
       <div className="rounded-[20px] border border-gray-200 bg-white px-4 py-2">
         {data.map((item, index) => (
-          <div key={index} className="flex items-center justify-between py-2">
+          <div key={index} className="flex items-center justify-between py-1.5">
             <div className="flex items-center gap-3">
               <div
                 style={{
                   backgroundColor: `${item.color}2A`,
                 }}
-                className="rounded-full p-3"
+                className="rounded-full p-2.5"
               >
                 <item.icon size="25" color={item.color} />
               </div>
