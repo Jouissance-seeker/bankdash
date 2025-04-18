@@ -12,7 +12,7 @@ interface IProps {
 export default function Providers(props: IProps) {
   return (
     <>
-      <NextTopLoader color="#155DFC" height={4} />
+      <NextTopLoader color="#155DFC" height={4} showSpinner={false} />
       <NuqsAdapter>
         <Suspense>{props.children}</Suspense>
       </NuqsAdapter>

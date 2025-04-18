@@ -12,7 +12,7 @@ export function RecentTransaction() {
       color: '#FFBB38',
     },
     {
-      text: 'Deposit from my',
+      text: 'Paypal',
       amount: '+$240',
       date: '13 Jan 2024',
       direction: 'up',

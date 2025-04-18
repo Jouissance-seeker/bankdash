@@ -1,13 +1,10 @@
 import { useToggleUrlState } from '@/hooks/toggle-url-state';
 import { cn } from '@/utils/cn';
-import {
-  CloseSquare,
-  HamburgerMenu,
-  SearchNormal1,
-} from 'iconsax-reactjs';
+import { CloseSquare, HamburgerMenu } from 'iconsax-reactjs';
 import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 import { Menu } from './menu';
+import Link from 'next/link';
 
 export function Header() {
   return (
@@ -21,13 +18,9 @@ export function Header() {
 const Desktop = () => {
   return (
     <div className="container hidden w-full items-center justify-between lg:flex">
-      <div className="flex items-center gap-2 rounded-full border border-gray-200 bg-gray-100 p-2 transition-all focus-within:border-gray-300">
-        <SearchNormal1 size={23} className="text-gray-500" />
-        <input
-          placeholder="Search for something ..."
-          className="placeholder:text-gray-500"
-        />
-      </div>
+      <Link href={'/'}>
+        <Image src={'/images/logo.png'} width={170} height={170} alt="logo" />
+      </Link>
       <Menu />
       <div className="flex items-center gap-3">
         <Image
@@ -66,13 +59,6 @@ const Mobile = () => {
             alt="avatar"
           />
         </div>
-        <div className="flex items-center gap-2 rounded-full border border-gray-200 bg-gray-100 p-2.5 transition-all focus-within:border-gray-300">
-          <SearchNormal1 size={23} className="text-gray-500" />
-          <input
-            placeholder="Search for something ..."
-            className="placeholder:text-gray-500"
-          />
-        </div>
       </div>
     </div>
   );
@@ -101,7 +87,14 @@ export const MobileHumbergerMenu = () => {
         )}
       >
         <div className="flex items-center justify-between">
-          <Image src={'/images/logo.png'} width={170} height={170} alt="logo" />
+          <Link href={'/'}>
+            <Image
+              src={'/images/logo.png'}
+              width={170}
+              height={170}
+              alt="logo"
+            />
+          </Link>
           <button onClick={() => toggleUrlState.hide()}>
             <CloseSquare size={30} className={'text-gray-500'} />
           </button>

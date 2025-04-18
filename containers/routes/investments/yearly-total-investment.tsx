@@ -62,7 +62,7 @@ export function YearlyTotalInvestment() {
   return (
     <div className="col-span-full flex flex-col gap-3 overflow-hidden lg:col-span-3">
       <p className="text-lg font-semibold text-gray-700 lg:text-xl">
-        Yearly Investment
+        Yearly Total Investment
       </p>
       <div className="rounded-[20px] border border-gray-200 bg-white p-4 pb-2">
         <ReactApexChart
